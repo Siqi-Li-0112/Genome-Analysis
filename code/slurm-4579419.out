@@ -1,0 +1,2 @@
+/var/spool/slurmd/job4579419/slurm_script: line 15: ./: Is a directory
+[E::bwa_idx_load_from_disk] fail to locate the index files

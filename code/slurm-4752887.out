@@ -1,0 +1,24 @@
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156069Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156069Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156067Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156067Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156066Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6156066Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040097Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040097Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040096Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040096Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040094Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040094Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040093Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040093Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]
+[E::hts_open_format] Failed to open file "/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040092Aligned.sortedByCoord.out.bam" : No such file or directory
+  [Errno 2] could not open alignment file `/domus/h1/siqili/gen-ana/result/rna-mapping/SSR6040092Aligned.sortedByCoord.out.bam`: No such file or directory
+  [Exception type: FileNotFoundError, raised in libcalignmentfile.pyx:941]

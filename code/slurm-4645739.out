@@ -1,0 +1,16 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"quast/5.0.2"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "quast/5.0.2"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/var/spool/slurmd/job4645739/slurm_script: line 14: cd: /domus/h1/siqili/gen-ana/result//assembly-quality-assembly: No such file or directory
+Usage: quast.py [options]
+
+quast.py: error: no such option: -p

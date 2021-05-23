@@ -1,0 +1,33 @@
+CMD finished (5 seconds)
+
+STATS_GENERATION_TIME: 958 seconds.
+CMD finished (989 seconds)
+CMD finished (989 seconds)
+CMD: touch left.fa.K25.stats.ok
+CMD finished (0 seconds)
+CMD: touch right.fa.K25.stats.ok
+CMD finished (0 seconds)
+-sorting each stats file by read name.
+CMD: head -n1 left.fa.K25.stats > left.fa.K25.stats.sort && tail -n +2 left.fa.K25.stats | /usr/bin/sort --parallel=8 -k1,1 -T . -S 12G >> left.fa.K25.stats.sort
+CMD: head -n1 right.fa.K25.stats > right.fa.K25.stats.sort && tail -n +2 right.fa.K25.stats | /usr/bin/sort --parallel=8 -k1,1 -T . -S 12G >> right.fa.K25.stats.sort
+CMD finished (21 seconds)
+CMD finished (22 seconds)
+CMD: touch left.fa.K25.stats.sort.ok
+CMD finished (0 seconds)
+CMD: touch right.fa.K25.stats.sort.ok
+CMD finished (0 seconds)
+-defining normalized reads
+CMD: /sw/bioinfo/trinity/2.11.0/rackham/util/..//util/support_scripts//nbkc_merge_left_right_stats.pl --left left.fa.K25.stats.sort --right right.fa.K25.stats.sort --sorted > pairs.K25.stats
+-opening left.fa.K25.stats.sort
+-opening right.fa.K25.stats.sort
+-done opening files.
+CMD finished (786 seconds)
+CMD: touch pairs.K25.stats.ok
+CMD finished (0 seconds)
+CMD: /sw/bioinfo/trinity/2.11.0/rackham/util/..//util/support_scripts//nbkc_normalize.pl --stats_file pairs.K25.stats --max_cov 200  --min_cov 1 --max_CV 10000 > pairs.K25.stats.C200.maxCV10000.accs
+Error, no reads made it to the normalization process...   at /sw/bioinfo/trinity/2.11.0/rackham/util/..//util/support_scripts//nbkc_normalize.pl line 117.
+Error, cmd: /sw/bioinfo/trinity/2.11.0/rackham/util/..//util/support_scripts//nbkc_normalize.pl --stats_file pairs.K25.stats --max_cov 200  --min_cov 1 --max_CV 10000 > pairs.K25.stats.C200.maxCV10000.accs died with ret 65280 at /sw/bioinfo/trinity/2.11.0/rackham/util/insilico_read_normalization.pl line 793.
+Error, cmd: /sw/bioinfo/trinity/2.11.0/rackham/util/insilico_read_normalization.pl --seqType fq --JM 25G  --max_cov 200 --min_cov 1 --CPU 8 --output /crex/proj/g2021012/nobackup/work/siqili/trinity_out_dir/insilico_read_normalization --max_CV 10000  --left /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.1.fastq.gz --right /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.2.fastq.gz --pairs_together  --PARALLEL_STATS   died with ret 512 at /sw/bioinfo/trinity/2.11.0/snowy/Trinity line 2826.
+	main::process_cmd('/sw/bioinfo/trinity/2.11.0/rackham/util/insilico_read_normali...') called at /sw/bioinfo/trinity/2.11.0/snowy/Trinity line 3379
+	main::normalize('/crex/proj/g2021012/nobackup/work/siqili/trinity_out_dir/insi...', 200, 'ARRAY(0x16f1240)', 'ARRAY(0x16f1270)') called at /sw/bioinfo/trinity/2.11.0/snowy/Trinity line 3319
+	main::run_normalization(200, 'ARRAY(0x16f1240)', 'ARRAY(0x16f1270)') called at /sw/bioinfo/trinity/2.11.0/snowy/Trinity line 1372

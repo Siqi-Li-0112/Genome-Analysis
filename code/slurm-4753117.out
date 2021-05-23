@@ -1,0 +1,32 @@
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6156069Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6156067Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6156066Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6040097Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6040096Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6040094Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6040093Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]
+[E::idx_find_and_load] Could not retrieve index file for '/domus/h1/siqili/gen-ana/result/rna-mapping/SRR6040092Aligned.sortedByCoord.out.bam'
+Error processing GFF file (line 5 of file /domus/h1/siqili/gen-ana/result/genome-annotation/braker/durian/augustus.hints.gff3):
+  Feature g1.t1.exon1 does not contain a 'gene_id' attribute
+  [Exception type: ValueError, raised in features.py:328]

@@ -1,0 +1,9 @@
+Usage: java -jar $PILON_HOME/pilon.jar other-options...
+Pilon version 1.24 Thu Jan 28 13:00:45 2021 -0500
+Exception in thread "main" java.lang.IllegalArgumentException: requirement failed: /domus/h1/siqili/gen-ana/result/correct-assembly/ill2pac-pe.sam must be indexed BAM
+	at scala.Predef$.require(Predef.scala:338)
+	at org.broadinstitute.pilon.BamFile.<init>(BamFile.scala:58)
+	at org.broadinstitute.pilon.Pilon$.optionParse(Pilon.scala:165)
+	at org.broadinstitute.pilon.Pilon$.optionParse(Pilon.scala:172)
+	at org.broadinstitute.pilon.Pilon$.main(Pilon.scala:84)
+	at org.broadinstitute.pilon.Pilon.main(Pilon.scala)

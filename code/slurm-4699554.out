@@ -1,0 +1,52 @@
+May 11 23:11:19 ..... started STAR run
+May 11 23:11:19 ... starting to generate Genome files
+May 11 23:11:20 ... starting to sort Suffix Array. This may take a long time...
+May 11 23:11:21 ... sorting Suffix Array chunks and saving them to disk...
+May 11 23:11:30 ... loading chunks from disk, packing SA...
+May 11 23:11:31 ... finished generating suffix array
+May 11 23:11:31 ... generating Suffix Array index
+May 11 23:11:36 ... completed Suffix Array index
+May 11 23:11:36 ... writing Genome to disk ...
+May 11 23:11:38 ... writing Suffix Array to disk ...
+May 11 23:11:40 ... writing SAindex to disk
+May 11 23:11:41 ..... finished successfully
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 23:11:41 ...... FATAL ERROR, exiting

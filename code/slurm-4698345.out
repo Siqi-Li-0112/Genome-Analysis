@@ -1,0 +1,93 @@
+May 11 16:44:08 ..... started STAR run
+May 11 16:44:08 ... starting to generate Genome files
+WARNING: --genomeSAindexNbases 14 is too large for the genome size=211812352, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 12		 May 11 16:44:09
+May 11 16:44:10 ... starting to sort Suffix Array. This may take a long time...
+May 11 16:44:11 ... sorting Suffix Array chunks and saving them to disk...
+May 11 16:44:20 ... loading chunks from disk, packing SA...
+May 11 16:44:22 ... finished generating suffix array
+May 11 16:44:22 ... generating Suffix Array index
+May 11 16:44:36 ... completed Suffix Array index
+May 11 16:44:36 ... writing Genome to disk ...
+May 11 16:44:38 ... writing Suffix Array to disk ...
+May 11 16:44:40 ... writing SAindex to disk
+May 11 16:44:54 ..... finished successfully
+May 11 16:44:54 ..... started STAR run
+May 11 16:44:54 ..... loading genome
+May 11 16:44:56 ..... started mapping
+May 11 16:45:26 ..... finished mapping
+May 11 16:45:26 ..... finished successfully
+May 11 16:45:30 ..... started STAR run
+May 11 16:45:30 ..... loading genome
+May 11 16:45:31 ..... started mapping
+May 11 16:46:01 ..... finished mapping
+May 11 16:46:01 ..... finished successfully
+May 11 16:46:05 ..... started STAR run
+May 11 16:46:06 ..... loading genome
+May 11 16:46:07 ..... started mapping
+May 11 16:46:23 ..... finished mapping
+May 11 16:46:24 ..... finished successfully
+May 11 16:46:29 ..... started STAR run
+May 11 16:46:30 ..... loading genome
+May 11 16:46:31 ..... started mapping
+May 11 16:46:48 ..... finished mapping
+May 11 16:46:49 ..... finished successfully
+May 11 16:46:54 ..... started STAR run
+May 11 16:46:54 ..... loading genome
+May 11 16:46:56 ..... started mapping
+May 11 16:48:57 ..... finished mapping
+May 11 16:48:58 ..... finished successfully
+May 11 16:49:03 ..... started STAR run
+May 11 16:49:04 ..... loading genome
+May 11 16:49:05 ..... started mapping
+May 11 16:51:05 ..... finished mapping
+May 11 16:51:06 ..... finished successfully
+May 11 16:51:09 ..... started STAR run
+May 11 16:51:10 ..... loading genome
+May 11 16:51:11 ..... started mapping
+May 11 16:51:45 ..... finished mapping
+May 11 16:51:45 ..... finished successfully
+May 11 16:51:50 ..... started STAR run
+May 11 16:51:51 ..... loading genome
+May 11 16:51:52 ..... started mapping
+May 11 16:52:24 ..... finished mapping
+May 11 16:52:24 ..... finished successfully
+May 11 16:52:30 ..... started STAR run
+May 11 16:52:30 ..... loading genome
+May 11 16:52:31 ..... started mapping
+May 11 16:52:45 ..... finished mapping
+May 11 16:52:45 ..... finished successfully
+May 11 16:52:48 ..... started STAR run
+May 11 16:52:48 ..... loading genome
+May 11 16:52:49 ..... started mapping
+May 11 16:53:01 ..... finished mapping
+May 11 16:53:01 ..... finished successfully
+May 11 16:53:04 ..... started STAR run
+May 11 16:53:04 ..... loading genome
+May 11 16:53:05 ..... started mapping
+May 11 16:53:20 ..... finished mapping
+May 11 16:53:21 ..... finished successfully
+May 11 16:53:23 ..... started STAR run
+May 11 16:53:23 ..... loading genome
+May 11 16:53:24 ..... started mapping
+May 11 16:53:42 ..... finished mapping
+May 11 16:53:43 ..... finished successfully
+May 11 16:53:49 ..... started STAR run
+May 11 16:53:50 ..... loading genome
+May 11 16:53:51 ..... started mapping
+May 11 16:54:01 ..... finished mapping
+May 11 16:54:01 ..... finished successfully
+May 11 16:54:04 ..... started STAR run
+May 11 16:54:04 ..... loading genome
+May 11 16:54:05 ..... started mapping
+May 11 16:54:16 ..... finished mapping
+May 11 16:54:16 ..... finished successfully
+May 11 16:54:19 ..... started STAR run
+May 11 16:54:19 ..... loading genome
+May 11 16:54:21 ..... started mapping
+May 11 16:54:45 ..... finished mapping
+May 11 16:54:46 ..... finished successfully
+May 11 16:54:48 ..... started STAR run
+May 11 16:54:49 ..... loading genome
+May 11 16:54:50 ..... started mapping
+May 11 16:55:11 ..... finished mapping
+May 11 16:55:12 ..... finished successfully

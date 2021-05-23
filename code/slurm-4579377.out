@@ -1,0 +1,10 @@
+[bwa_index] Pack FASTA... 0.25 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 17.65 seconds elapse.
+[bwa_index] Update BWT... 0.19 sec
+[bwa_index] Pack forward-only FASTA... 0.16 sec
+[bwa_index] Construct SA from BWT and Occ... 7.49 sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa index -p pacbio_index -a is /domus/h1/siqili/gen-ana/result/canu_genome_assembly/pacbio.contigs.fasta
+[main] Real time: 26.669 sec; CPU: 25.751 sec
+[E::bwa_idx_load_from_disk] fail to locate the index files

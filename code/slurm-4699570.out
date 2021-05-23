@@ -1,0 +1,63 @@
+May 11 23:19:20 ..... started STAR run
+May 11 23:19:20 ... starting to generate Genome files
+May 11 23:19:21 ... starting to sort Suffix Array. This may take a long time...
+May 11 23:19:22 ... sorting Suffix Array chunks and saving them to disk...
+May 11 23:19:31 ... loading chunks from disk, packing SA...
+May 11 23:19:32 ... finished generating suffix array
+May 11 23:19:32 ... generating Suffix Array index
+May 11 23:19:36 ... completed Suffix Array index
+May 11 23:19:36 ... writing Genome to disk ...
+May 11 23:19:38 ... writing Suffix Array to disk ...
+May 11 23:19:41 ... writing SAindex to disk
+May 11 23:19:42 ..... finished successfully
+May 11 23:19:42 ..... started STAR run
+May 11 23:19:42 ..... loading genome
+May 11 23:19:42 ..... started mapping
+May 11 23:20:32 ..... finished mapping
+May 11 23:20:32 ..... started sorting BAM
+May 11 23:20:46 ..... finished successfully
+May 11 23:20:46 ..... started STAR run
+May 11 23:20:46 ..... loading genome
+May 11 23:20:46 ..... started mapping
+May 11 23:21:07 ..... finished mapping
+May 11 23:21:07 ..... started sorting BAM
+May 11 23:21:15 ..... finished successfully
+May 11 23:21:15 ..... started STAR run
+May 11 23:21:15 ..... loading genome
+May 11 23:21:15 ..... started mapping
+May 11 23:21:52 ..... finished mapping
+May 11 23:21:52 ..... started sorting BAM
+May 11 23:22:02 ..... finished successfully
+May 11 23:22:03 ..... started STAR run
+May 11 23:22:03 ..... loading genome
+May 11 23:22:03 ..... started mapping
+May 11 23:22:28 ..... finished mapping
+May 11 23:22:28 ..... started sorting BAM
+May 11 23:22:35 ..... finished successfully
+May 11 23:22:35 ..... started STAR run
+May 11 23:22:35 ..... loading genome
+May 11 23:22:35 ..... started mapping
+May 11 23:23:45 ..... finished mapping
+May 11 23:23:45 ..... started sorting BAM
+May 11 23:24:14 ..... finished successfully
+May 11 23:24:14 ..... started STAR run
+May 11 23:24:14 ..... loading genome
+May 11 23:24:15 ..... started mapping
+May 11 23:27:59 ..... finished mapping
+May 11 23:27:59 ..... started sorting BAM
+
+EXITING because of fatal ERROR: not enough memory for BAM sorting: 
+SOLUTION: re-run STAR with at least --limitBAMsortRAM 2295432027
+May 11 23:27:59 ...... FATAL ERROR, exiting
+May 11 23:28:05 ..... started STAR run
+May 11 23:28:05 ..... loading genome
+May 11 23:28:05 ..... started mapping
+May 11 23:28:46 ..... finished mapping
+May 11 23:28:46 ..... started sorting BAM
+May 11 23:28:58 ..... finished successfully
+May 11 23:28:58 ..... started STAR run
+May 11 23:28:58 ..... loading genome
+May 11 23:28:59 ..... started mapping
+May 11 23:30:03 ..... finished mapping
+May 11 23:30:03 ..... started sorting BAM
+May 11 23:30:22 ..... finished successfully

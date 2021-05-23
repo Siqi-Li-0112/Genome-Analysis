@@ -1,0 +1,17 @@
+	trimmomatic 0.36 loaded, see 'module help trimmomatic/0.36' for more information.
+TrimmomaticPE: Started with arguments:
+ -threads 4 -trimlog trim.log /domus/h1/siqili/gen-ana/raw-data/transcriptome/untrimmed/SRR6040095_scaffold_10.1.fastq.gz /domus/h1/siqili/gen-ana/raw-data/transcriptome/untrimmed/SRR6040095_scaffold_10.2.fastq.gz output_forward_paired_R1.fq.gz output_forward_unpaired_R1.fq.gz output_reverse_paired_R2.fq.gz output_reverse_unpaired_R2.fq.gz ILLUMINACLIP:TruSeq3-SE:2:30:10 SLIDINGWINDOW:4:15 LEADING:3 TRAILING:3
+java.io.FileNotFoundException: /domus/h1/siqili/gen-ana/result/transcriptome-trim/TruSeq3-SE (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at org.usadellab.trimmomatic.fasta.FastaParser.parse(FastaParser.java:54)
+	at org.usadellab.trimmomatic.trim.IlluminaClippingTrimmer.loadSequences(IlluminaClippingTrimmer.java:110)
+	at org.usadellab.trimmomatic.trim.IlluminaClippingTrimmer.makeIlluminaClippingTrimmer(IlluminaClippingTrimmer.java:71)
+	at org.usadellab.trimmomatic.trim.TrimmerFactory.makeTrimmer(TrimmerFactory.java:32)
+	at org.usadellab.trimmomatic.Trimmomatic.createTrimmers(Trimmomatic.java:59)
+	at org.usadellab.trimmomatic.TrimmomaticPE.run(TrimmomaticPE.java:536)
+	at org.usadellab.trimmomatic.Trimmomatic.main(Trimmomatic.java:80)
+Quality encoding detected as phred33
+Input Read Pairs: 13044149 Both Surviving: 13036261 (99.94%) Forward Only Surviving: 1035 (0.01%) Reverse Only Surviving: 6721 (0.05%) Dropped: 132 (0.00%)
+TrimmomaticPE: Completed successfully

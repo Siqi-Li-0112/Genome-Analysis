@@ -1,0 +1,37 @@
+augustus/3.4.0 : If you see errors about not being able to write to an augustus directory, see 'module help augustus/3.4.0'
+blast/2.2.31+ : the old-format NCBI blast databases are no longer updated after September 2019, use blast/2.9.0+ to search the latest NCBI databases
+GeneMark/4.62-es : A recent key file is needed to use this software and it must exist in your home directory. See 'module help GeneMark/4.62-es'
+GeneMark/4.62-es : A recent key file is needed to use this software and it must exist in your home directory. See 'module help GeneMark/4.62-es'
+diamond/0.9.31 : for available prebuilt databases, see 'module help diamond/0.9.31'
+braker/2.1.5-20210115-e98b812 : GeneMark and augustus may require some setup; see 'module help braker/2.1.5-20210115-e98b812'
+#**********************************************************************************
+#                               BRAKER CONFIGURATION                               
+#**********************************************************************************
+# BRAKER CALL: /sw/bioinfo/braker/2.1.5-20210115-e98b812/snowy/scripts/braker.pl --species=durian --genome=/domus/h1/siqili/gen-ana/result/correct-assembly/pilon.fasta --bam=/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6040092Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6040093Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6040094Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6040096Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6040097Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6156066Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6156067Aligned.sortedByCoord.out.bam,/domus/h1/siqili/gen-ana/result/rna-mapping//SRR6156069Aligned.sortedByCoord.out.bam
+# Mon May 17 17:06:59 2021: braker.pl version 2.1.5
+# Mon May 17 17:06:59 2021: Configuring of BRAKER for using external tools...
+# Mon May 17 17:06:59 2021: Found environment variable $AUGUSTUS_CONFIG_PATH. Setting $AUGUSTUS_CONFIG_PATH to /sw/bioinfo/augustus/3.4.0/snowy/config
+# Mon May 17 17:06:59 2021: ERROR: in file /sw/bioinfo/braker/2.1.5-20210115-e98b812/snowy/scripts/braker.pl at line 1704
+AUGUSTUS_CONFIG_PATH/species (in this case /sw/bioinfo/augustus/3.4.0/snowy/config/durian) is not writeable.
+There are 3 alternative ways to set this variable for braker.pl:
+   a) provide command-line argument --AUGUSTUS_CONFIG_PATH=/your/path
+   b) use an existing environment variable $AUGUSTUS_CONFIG_PATH
+      for setting the environment variable, run
+           export AUGUSTUS_CONFIG_PATH=/your/path
+      in your shell. You may append this to your .bashrc or
+      .profile file in order to make the variable available to all
+      your bash sessions.
+   c) braker.pl can try guessing the location of
+      $AUGUSTUS_CONFIG_PATH from an augustus executable that is
+      available in your $PATH variable.
+      If you try to rely on this option, you can check by typing
+           which augustus
+      in your shell, whether there is an augustus executable in
+      your $PATH
+      Be aware: the $AUGUSTUS_CONFIG_PATH must be writable for
+                braker.pl because braker.pl is a pipeline that
+                optimizes parameters that reside in that
+                directory. This might be problematic in case you
+                are using a system-wide installed augustus 
+                installation that resides in a directory that is
+                not writable to you as a user.

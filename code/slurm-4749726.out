@@ -1,0 +1,60 @@
+May 17 22:10:22 ..... started STAR run
+May 17 22:10:22 ... starting to generate Genome files
+May 17 22:10:23 ... starting to sort Suffix Array. This may take a long time...
+May 17 22:10:24 ... sorting Suffix Array chunks and saving them to disk...
+May 17 22:10:34 ... loading chunks from disk, packing SA...
+May 17 22:10:35 ... finished generating suffix array
+May 17 22:10:35 ... generating Suffix Array index
+May 17 22:10:39 ... completed Suffix Array index
+May 17 22:10:39 ... writing Genome to disk ...
+May 17 22:10:41 ... writing Suffix Array to disk ...
+May 17 22:10:44 ... writing SAindex to disk
+May 17 22:10:45 ..... finished successfully
+May 17 22:10:45 ..... started STAR run
+May 17 22:10:45 ..... loading genome
+May 17 22:10:45 ..... started mapping
+May 17 22:11:37 ..... finished mapping
+May 17 22:11:38 ..... started sorting BAM
+May 17 22:11:51 ..... finished successfully
+May 17 22:11:52 ..... started STAR run
+May 17 22:11:52 ..... loading genome
+May 17 22:11:52 ..... started mapping
+May 17 22:12:13 ..... finished mapping
+May 17 22:12:13 ..... started sorting BAM
+May 17 22:12:21 ..... finished successfully
+May 17 22:12:22 ..... started STAR run
+May 17 22:12:22 ..... loading genome
+May 17 22:12:22 ..... started mapping
+May 17 22:13:00 ..... finished mapping
+May 17 22:13:00 ..... started sorting BAM
+May 17 22:13:10 ..... finished successfully
+May 17 22:13:11 ..... started STAR run
+May 17 22:13:11 ..... loading genome
+May 17 22:13:11 ..... started mapping
+May 17 22:13:37 ..... finished mapping
+May 17 22:13:37 ..... started sorting BAM
+May 17 22:13:43 ..... finished successfully
+May 17 22:13:44 ..... started STAR run
+May 17 22:13:44 ..... loading genome
+May 17 22:13:44 ..... started mapping
+May 17 22:14:54 ..... finished mapping
+May 17 22:14:55 ..... started sorting BAM
+May 17 22:15:20 ..... finished successfully
+May 17 22:15:21 ..... started STAR run
+May 17 22:15:21 ..... loading genome
+May 17 22:15:21 ..... started mapping
+May 17 22:19:12 ..... finished mapping
+May 17 22:19:12 ..... started sorting BAM
+May 17 22:20:19 ..... finished successfully
+May 17 22:20:20 ..... started STAR run
+May 17 22:20:21 ..... loading genome
+May 17 22:20:21 ..... started mapping
+May 17 22:21:05 ..... finished mapping
+May 17 22:21:05 ..... started sorting BAM
+May 17 22:21:16 ..... finished successfully
+May 17 22:21:17 ..... started STAR run
+May 17 22:21:17 ..... loading genome
+May 17 22:21:17 ..... started mapping
+May 17 22:22:27 ..... finished mapping
+May 17 22:22:27 ..... started sorting BAM
+May 17 22:22:43 ..... finished successfully

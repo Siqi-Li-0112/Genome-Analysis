@@ -1,0 +1,3 @@
+Usage: java -jar $PILON_HOME/pilon.jar other-options...
+/var/spool/slurmd/job4638983/slurm_script: line 13: syntax error near unexpected token `newline'
+/var/spool/slurmd/job4638983/slurm_script: line 13: `java -Xmx16G -jar <pilon.jar>'

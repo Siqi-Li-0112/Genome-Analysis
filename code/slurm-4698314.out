@@ -1,0 +1,93 @@
+May 11 16:32:08 ..... started STAR run
+May 11 16:32:08 ... starting to generate Genome files
+WARNING: --genomeSAindexNbases 14 is too large for the genome size=211812352, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 12		 May 11 16:32:09
+May 11 16:32:10 ... starting to sort Suffix Array. This may take a long time...
+May 11 16:32:11 ... sorting Suffix Array chunks and saving them to disk...
+May 11 16:32:20 ... loading chunks from disk, packing SA...
+May 11 16:32:21 ... finished generating suffix array
+May 11 16:32:21 ... generating Suffix Array index
+May 11 16:32:33 ... completed Suffix Array index
+May 11 16:32:33 ... writing Genome to disk ...
+May 11 16:32:35 ... writing Suffix Array to disk ...
+May 11 16:32:37 ... writing SAindex to disk
+May 11 16:32:51 ..... finished successfully
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting
+
+EXITING because of fatal PARAMETER error: missing BAM option
+SOLUTION: re-run STAR with one of the allowed values of --outSAMtype BAM Unsorted OR SortedByCoordinate OR both
+
+May 11 16:32:52 ...... FATAL ERROR, exiting

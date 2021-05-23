@@ -1,0 +1,47 @@
+May 11 22:59:20 ..... started STAR run
+
+EXITING because of FATAL INPUT PARAMETER ERROR: when generating genome without annotations (--sjdbFileChrStartEnd or --sjdbGTFfile options)
+do not specify >0 --sjdbOverhang
+SOLUTION: re-run genome generation without --sjdbOverhang option
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting
+
+EXITING: FATAL INPUT ERROR: unrecognized parameter name "--outSAMtype" in input "Command-Line-Initial"
+SOLUTION: use correct parameter name (check the manual)
+
+May 11 22:59:20 ...... FATAL ERROR, exiting

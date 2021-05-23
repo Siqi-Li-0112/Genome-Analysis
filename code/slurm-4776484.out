@@ -1,0 +1,155 @@
+Bowtie2 looks for the specified index first in the current directory, then in the directory specified in the BOWTIE2_INDEXES environment variable.
+The pregenerated indexes for the reference genonomes are placed under /sw/data/reference/*/*/program_files/bowtie2 for each reference genome
+jellyfish/2.3.0 : Use node-local storage when building and accessing jellyfish databases.  See 'module help jellyfish/2.3.0'.
+
+
+     ______  ____   ____  ____   ____  ______  __ __
+    |      ||    \ |    ||    \ |    ||      ||  |  |
+    |      ||  D  ) |  | |  _  | |  | |      ||  |  |
+    |_|  |_||    /  |  | |  |  | |  | |_|  |_||  ~  |
+      |  |  |    \  |  | |  |  | |  |   |  |  |___, |
+      |  |  |  .  \ |  | |  |  | |  |   |  |  |     |
+      |__|  |__|\_||____||__|__||____|  |__|  |____/
+
+    Trinity-v2.11.0
+
+
+
+Left read files: $VAR1 = [
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.1.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.1.fastq.gz'
+        ];
+Right read files: $VAR1 = [
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.2.fastq.gz',
+          '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.2.fastq.gz'
+        ];
+Trinity version: Trinity-v2.11.0
+** NOTE: Latest version of Trinity is v2.12.0, and can be obtained at:
+	https://github.com/trinityrnaseq/trinityrnaseq/releases
+
+Saturday, May 22, 2021: 19:02:06	CMD: java -Xmx64m -XX:ParallelGCThreads=2  -jar /sw/bioinfo/trinity/2.11.0/rackham/util/support_scripts/ExitTester.jar 0
+Saturday, May 22, 2021: 19:02:07	CMD: java -Xmx4g -XX:ParallelGCThreads=2  -jar /sw/bioinfo/trinity/2.11.0/rackham/util/support_scripts/ExitTester.jar 1
+Saturday, May 22, 2021: 19:02:07	CMD: mkdir -p /domus/h1/siqili/gen-ana/result/transcriptome-assembly/trinity_out_dir
+Saturday, May 22, 2021: 19:02:07	CMD: mkdir -p /domus/h1/siqili/gen-ana/result/transcriptome-assembly/trinity_out_dir/chrysalis
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+---------------------------------------------------------------
+------------ In silico Read Normalization ---------------------
+-- (Removing Excess Reads Beyond 200 Coverage --
+---------------------------------------------------------------
+
+# running normalization on reads: $VAR1 = [
+          [
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.1.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.1.fastq.gz'
+          ],
+          [
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.2.fastq.gz',
+            '/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.2.fastq.gz'
+          ]
+        ];
+
+
+Saturday, May 22, 2021: 19:02:07	CMD: /sw/bioinfo/trinity/2.11.0/rackham/util/insilico_read_normalization.pl --seqType fq --JM 25G  --max_cov 200 --min_cov 1 --CPU 8 --output /domus/h1/siqili/gen-ana/result/transcriptome-assembly/trinity_out_dir/insilico_read_normalization --max_CV 10000  --left /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.1.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.1.fastq.gz --right /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.2.fastq.gz,/domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.2.fastq.gz --pairs_together  --PARALLEL_STATS  
+-prepping seqs
+Converting input files. (both directions in parallel)CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.1.fastq.gz) >> left.fa
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040092_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (11 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (12 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040093_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (9 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (9 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040094_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (65 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (65 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040096_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (23 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (24 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6040097_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (7 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (7 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156066_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (8 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (8 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156067_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (4 seconds)
+CMD: seqtk-trinity seq -A -R 1  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.1.fastq.gz) >> left.fa
+CMD finished (5 seconds)
+CMD: seqtk-trinity seq -A -R 2  <(gunzip -c /domus/h1/siqili/gen-ana/raw-data/transcriptome/trimmed//SRR6156069_scaffold_10.2.fastq.gz) >> right.fa
+CMD finished (9 seconds)
+CMD finished (10 seconds)
+CMD: touch left.fa.ok
+CMD finished (1 seconds)
+CMD: touch right.fa.ok
+CMD finished (0 seconds)
+Done converting input files.CMD: cat left.fa right.fa > both.fa
+CMD finished (96 seconds)
+CMD: touch both.fa.ok
+CMD finished (0 seconds)
+-kmer counting.
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+CMD: jellyfish count -t 8 -m 25 -s 2746970753  --canonical  both.fa
+CMD finished (324 seconds)
+CMD: jellyfish histo -t 8 -o jellyfish.K25.min2.kmers.fa.histo mer_counts.jf
+CMD finished (3 seconds)
+CMD: jellyfish dump -L 2 mer_counts.jf > jellyfish.K25.min2.kmers.fa
+CMD finished (10 seconds)
+CMD: touch jellyfish.K25.min2.kmers.fa.success
+CMD finished (0 seconds)
+-generating stats files
+CMD: /sw/bioinfo/trinity/2.11.0/rackham/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads left.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 4  --DS  > left.fa.K25.stats
+CMD: /sw/bioinfo/trinity/2.11.0/rackham/util/..//Inchworm/bin/fastaToKmerCoverageStats --reads right.fa --kmers jellyfish.K25.min2.kmers.fa --kmer_size 25  --num_threads 4  --DS  > right.fa.K25.stats
+-reading Kmer occurrences...-reading Kmer occurrences...
+
+ERROR: kmer ACTACCTGCCTTGACAA is not of length: 25
+
+ done parsing 11183133 Kmers, 11183132 added, taking 23 seconds.
+ERROR: kmer ACTACCTGCCTTGACAA is not of length: 25
+
+ done parsing 11183133 Kmers, 11183132 added, taking 23 seconds.
+STATS_GENERATION_TIME: 975 seconds.
+CMD finished (1002 seconds)
+STATS_GENERATION_TIME: 998 seconds.
+CMD finished (1023 seconds)
+CMD: touch left.fa.K25.stats.ok
+CMD finished (0 seconds)
+CMD: touch right.fa.K25.stats.ok
+/usr/bin/sort: write error: Disk quota exceeded

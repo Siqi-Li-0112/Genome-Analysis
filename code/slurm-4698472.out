@@ -1,0 +1,4 @@
+May 11 17:12:11 ..... started STAR run
+May 11 17:12:11 ... starting to generate Genome files
+WARNING: --genomeSAindexNbases 14 is too large for the genome size=211812352, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 12		 May 11 17:12:12
+slurmstepd: error: *** JOB 4698472 ON s14 CANCELLED AT 2021-05-11T18:42:24 DUE TO TIME LIMIT ***
