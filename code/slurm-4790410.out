@@ -1,0 +1,19 @@
+gnuplot 4.6 patchlevel 2
+Writing filtered delta file out.filter
+Reading delta file out.filter
+Writing plot files out.fplot, out.rplot
+Writing gnuplot script out.gp
+Forking mouse listener
+Rendering plot to screen
+Error: Can't open display: localhost:82.0
+WARNING: Unable to query clipboard with xclip
+
+gnuplot: unable to open display 'localhost:82.0'
+gnuplot: X11 aborted.
+-- INTERACTIVE MODE --
+consult gnuplot docs for command list
+mouse 1: coords to clipboard
+mouse 2: mark on plot
+mouse 3: zoom box
+'h' for help in plot window
+enter to exit
