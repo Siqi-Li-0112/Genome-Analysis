@@ -1,0 +1,136 @@
+---
+title: "Differential Expression Analysis"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+The following codes prepare the sample table
+```{r}
+directory <- "D:/Academic/study/Uppsala/Genome Analysis/Project/result/differential expression analysis/htseq"
+sampleFiles <- list.files(directory)
+sampleClade <- c("MusangKing","MusangKing","MusangKing","MusangKing","MusangKing","Monthong","Monthong","Monthong")
+samplePart <- c("leaf","root","aril","stem","aril","aril","aril","aril")
+sampleTable <- data.frame(sampleName=sub(".count","",sampleFiles),fileName=sampleFiles, clade=sampleClade, part=samplePart)
+sampleTable$clade <- factor(sampleTable$clade)
+sampleTable$part <- factor(sampleTable$part)
+```
+
+1, Differential expression analysis among different clade in aril (Monthong VS MusangKing)
+Load sample data from HTSeq files
+```{r}
+library("DESeq2")
+sampleTable_aril <- sampleTable[which(sampleTable$part=="aril"),]
+ddsClade <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable_aril, directory = directory, design= ~ clade)
+ddsClade
+```
+Differential expression analysis
+```{r}
+ddsClade <- DESeq(ddsClade)
+resClade <- results(ddsClade)
+resClade
+summary(resClade)
+```
+visualization of results
+```{r}
+DESeq2::plotMA(resClade,ylim=c(-10,10))
+
+#Filter significant result and make a new fig
+library(dplyr)
+resClade1 = as.data.frame(resClade)
+resClade1 = mutate(resClade1, sig=ifelse(resClade1$padj<0.1, "FDR<0.1", "Not Sig"))
+resClade1[which(abs(resClade1$log2FoldChange)<1.0), "sig"]="Not Sig"
+
+library(ggplot2)
+ggplot(resClade1, aes(log2FoldChange, -log10(padj)))+geom_point(aes(col=sig))+scale_color_manual(values = c("red","black"))
+resClade1[order(resClade1$log2FoldChange, decreasing = T),]
+```
+
+2.1, Differential expression analysis among different parts in Musang King (stem vs aril)
+```{r}
+sampleTable_MK <- sampleTable[which(sampleTable$clade=="MusangKing"),]
+ddsPart <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable_MK, directory = directory, design= ~ part)
+ddsPart
+```
+Differential analysis
+```{r}
+ddsPart <- DESeq(ddsPart)
+resPart <- results(ddsPart)
+resPart
+summary(resPart)
+```
+visualization of results
+```{r}
+DESeq2::plotMA(resPart,ylim=c(-10,10))
+
+#Filter significant result and make a new fig
+resPart1 = as.data.frame(resPart)
+resPart1 = mutate(resPart1, sig=ifelse(resPart1$padj<0.1, "FDR<0.1", "Not Sig"))
+resPart1[which(abs(resPart1$log2FoldChange)<1.0), "sig"]="Not Sig"
+ggplot(resPart1, aes(log2FoldChange, -log10(padj)))+geom_point(aes(col=sig))+scale_color_manual(values = c("red","black"))
+resPart1[order(resPart1$log2FoldChange, decreasing = F),]
+```
+
+2.2, Differential expression analysis among different parts in Musang King (leaf vs aril)
+```{r}
+#extract subset from sampleTable
+sampleTable_MK_LA <- sampleTable[which(sampleTable$clade=="MusangKing"&(sampleTable$part=="leaf"|sampleTable$part=="aril")),]
+
+ddsPart_LA <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable_MK_LA, directory = directory, design= ~ part)
+ddsPart_LA
+```
+Differential analysis
+```{r}
+ddsPart_LA <- DESeq(ddsPart_LA)
+resPart_LA <- results(ddsPart_LA)
+resPart_LA
+summary(resPart_LA)
+```
+visualization of results
+```{r}
+DESeq2::plotMA(resPart_LA,ylim=c(-10,10))
+
+#Filter significant result and make a new fig
+resPart_LA1 = as.data.frame(resPart_LA)
+resPart_LA1 = mutate(resPart_LA1, sig=ifelse(resPart_LA1$padj<0.1, "FDR<0.1", "Not Sig"))
+resPart_LA1[which(abs(resPart_LA1$log2FoldChange)<1.0), "sig"]="Not Sig"
+ggplot(resPart_LA1, aes(log2FoldChange, -log10(padj)))+geom_point(aes(col=sig))+scale_color_manual(values = c("red","black"))
+resPart_LA1[order(resPart_LA1$log2FoldChange, decreasing = F),]
+```
+
+2.3, Differential expression analysis among different parts in Musang King (root vs aril)
+```{r}
+#extract subset from sampleTable
+sampleTable_MK_RA <- sampleTable[which(sampleTable$clade=="MusangKing"&(sampleTable$part=="root"|sampleTable$part=="aril")),]
+
+ddsPart_RA <- DESeqDataSetFromHTSeqCount(sampleTable = sampleTable_MK_RA, directory = directory, design= ~ part)
+ddsPart_RA
+```
+
+Differential analysis
+```{r}
+ddsPart_RA <- DESeq(ddsPart_RA)
+resPart_RA <- results(ddsPart_RA)
+resPart_RA
+summary(resPart_RA)
+```
+
+visualization of results
+```{r}
+DESeq2::plotMA(resPart_RA,ylim=c(-10,10))
+
+#Filter significant result and make a new fig
+resPart_RA1 = as.data.frame(resPart_RA)
+resPart_RA1 = mutate(resPart_RA1, sig=ifelse(resPart_RA1$padj<0.1, "FDR<0.1", "Not Sig"))
+resPart_RA1[which(abs(resPart_RA1$log2FoldChange)<1.0), "sig"]="Not Sig"
+ggplot(resPart_RA1, aes(log2FoldChange, -log10(padj)))+geom_point(aes(col=sig))+scale_color_manual(values = c("red","black"))
+resPart_RA1[order(resPart_RA1$log2FoldChange, decreasing = F),]
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
