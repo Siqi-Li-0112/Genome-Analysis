@@ -1,6 +1,8 @@
 ---
 title: "Differential Expression Analysis"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -127,6 +129,14 @@ resPart_RA1 = mutate(resPart_RA1, sig=ifelse(resPart_RA1$padj<0.1, "FDR<0.1", "N
 resPart_RA1[which(abs(resPart_RA1$log2FoldChange)<1.0), "sig"]="Not Sig"
 ggplot(resPart_RA1, aes(log2FoldChange, -log10(padj)))+geom_point(aes(col=sig))+scale_color_manual(values = c("red","black"))
 resPart_RA1[order(resPart_RA1$log2FoldChange, decreasing = F),]
+```
+
+Combine significant result of parts comparison
+```{r}
+resPart_all1 <- merge(resPart1[which(resPart1$sig=="FDR<0.1"),],resPart_LA1[which(resPart_LA1$sig=="FDR<0.1"),],by=0)
+resPart_all2 <- merge(resPart1[which(resPart1$sig=="FDR<0.1"),],resPart_RA1[which(resPart_RA1$sig=="FDR<0.1"),],by=0)
+resPart_all <- merge(resPart_all1,resPart_all2,by=(1:8))
+write.csv(resPart_all, file = "D:/Academic/study/Uppsala/Genome Analysis/Project/result/differential expression analysis/sig-result among all parts.csv")
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
