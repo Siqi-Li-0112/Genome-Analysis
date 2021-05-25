@@ -12,4 +12,5 @@ module load bioinfo-tools
 module load MUMmer
 cd "/domus/h1/siqili/gen-ana/result/assembly-quality-assessment/MUMmerplot_result/"
 nucmer  -p nucmer  "/domus/h1/siqili/gen-ana/raw-data/durian-scaffold10-ncbi.fasta" "/domus/h1/siqili/gen-ana/result/correct-assembly/pilon.fasta"
-mummerplot -Q /domus/h1/siqili/gen-ana/result/correct-assembly/pilon.fasta -f nucmer.delta
+#mummerplot -Q /domus/h1/siqili/gen-ana/result/correct-assembly/pilon.fasta -f -l -t png  nucmer.delta
+mummerplot -c -f -t png  nucmer.delta
