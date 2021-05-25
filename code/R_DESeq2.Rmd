@@ -137,7 +137,7 @@ resPart_all1 <- merge(resPart1[which(resPart1$sig=="FDR<0.1"),],resPart_LA1[whic
 resPart_all2 <- merge(resPart1[which(resPart1$sig=="FDR<0.1"),],resPart_RA1[which(resPart_RA1$sig=="FDR<0.1"),],by=0)
 resPart_all <- merge(resPart_all1,resPart_all2,by=(1:8))
 #export results for clades and parts
-write.csv(resClade1, file = "D:/Academic/study/Uppsala/Genome Analysis/Project/result/differential expression analysis/sig-result among 2 clades.csv")
+write.csv(resClade1[which(resClade1$sig=="FDR<0.1"),], file = "D:/Academic/study/Uppsala/Genome Analysis/Project/result/differential expression analysis/sig-result among 2 clades.csv")
 write.csv(resPart_all, file = "D:/Academic/study/Uppsala/Genome Analysis/Project/result/differential expression analysis/sig-result among all parts.csv")
 ```
 
